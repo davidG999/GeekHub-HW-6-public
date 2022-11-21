@@ -1,0 +1,93 @@
+body {
+  background : #222;
+  color      : #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin     : 0;
+  padding    : 0;
+}
+
+ul {
+  margin         : 0;
+  padding        : 0;
+  list-style-type: none;
+}
+
+a {
+  color: #eee;
+}
+
+.header {
+  padding  : 10px 30px;
+  max-width: 900px;
+  margin   : 0 auto;
+}
+
+.header__title {
+  text-align: center;
+}
+
+.repos__list {
+  padding        : 20px;
+  max-width      : 90%;
+  margin         : 0 auto;
+  display        : flex;
+  justify-content: space-between;
+  flex-wrap      : wrap;
+}
+
+.repo {
+  background   : #333;
+  box-shadow   : 2px 3px 15px 5px #111;
+  border       : 3px solid #111;
+  margin       : 15px 5px;
+  padding      : 15px;
+  min-width    : 270px;
+  border-radius: 5px;
+}
+
+.repos__title,
+.repo__title {
+  text-align: center;
+}
+
+.repos__title {
+  font-size: 30px;
+}
+
+.repo__title {
+  font-size: 25px;
+}
+
+.show-commit-btn {
+  display: block;
+  margin : 15px auto;
+}
+
+.repo__info {
+  display       : flex;
+  flex-direction: column;
+  margin        : 0 auto;
+}
+
+/* LOADER */
+
+.loader {
+  display: none;
+
+  width        : 35px;
+  height       : 35px;
+  border-top   : 5px solid #fff;
+  border-radius: 100%;
+  margin       : auto;
+  animation    : spin 0.8s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
