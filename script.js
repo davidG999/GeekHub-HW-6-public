@@ -1,13 +1,11 @@
-import token from "./GH-token.js";
-
 const reposList = document.querySelector('.repos__list')
 
 const options = {
   headers: new Headers({
-    /* Use your token here OR remove 'options' as 2nd argument in 'fetch' (lines 57 and 70)
-    If no token is provided, the rate limit allows for up to 60 requests per hour
-    Details: https://docs.github.com/en/rest/overview/resources-in-the-rest-api#requests-from-personal-accounts */
-    "Authorization": `Bearer ${token}`
+    /* Uncomment next line and use your token. If no token is provided, the rate limit allows for up to 60 requests per hour.
+      Details: https://docs.github.com/en/rest/overview/resources-in-the-rest-api#requests-from-personal-accounts */
+
+    // "Authorization": `Bearer ${token}`
   }),
 }
 
